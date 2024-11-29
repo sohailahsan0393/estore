@@ -1,53 +1,121 @@
-/*This code is for contactuspage*/
-
-
-/* Center the form on the page */
-form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Style the heading */
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Label styling */
-label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-}
-
-/* Input and textarea styling */
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 14px;
-}
-
-/* Button styling */
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eStore - Your Online Shopping Destination</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .banner {
+            background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
+            height: 400px;
+            text-align: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .categories, .featured-products {
+            padding: 20px;
+            text-align: center;
+        }
+        .categories h2, .featured-products h2 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        .category-list, .product-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .category-item, .product-item {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            width: 150px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to eStore</h1>
+        <p>Your one-stop shop for all your needs</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="banner">
+        <p>Discover Amazing Deals</p>
+    </div>
+    <section class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-list">
+            <div class="category-item">Electronics</div>
+            <div class="category-item">Fashion</div>
+            <div class="category-item">Home & Living</div>
+            <div class="category-item">Books</div>
+        </div>
+    </section>
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <p>Smartphone</p>
+                <p>$499</p>
+            </div>
+            <div class="product-item">
+                <p>Sports Shoes</p>
+                <p>$59</p>
+            </div>
+            <div class="product-item">
+                <p>Blender</p>
+                <p>$29</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 eStore. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
