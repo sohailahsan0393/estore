@@ -1,94 +1,65 @@
-/* promotion page styling */
-
-h1, h2, p {
+/* Universal CSS - Applies to all pages */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
 }
 
-/* Header */
-.header {
-    background-color: #4CAF50;
+header, footer {
+    background-color: #333;
     color: #fff;
+    padding: 10px 0;
     text-align: center;
-    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #222;
+}
+
+/* Exclusive Promotions Page */
+.promo-card {
+    display: flex;
+    margin: 20px auto;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.header h1 {
-    font-size: 2.5rem;
-}
-
-.header p {
-    font-size: 1.2rem;
-    margin-top: 10px;
-}
-
-/* Promotions Section */
-.promotions-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-/* Promotion Card */
-.promo-card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-    overflow: hidden;
-    max-width: 350px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.promo-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.promo-image {
-    width: 100%;
-    height: auto;
+.promo-card img {
+    width: 50%;
     object-fit: cover;
 }
 
 .promo-content {
-    padding: 15px;
+    padding: 20px;
+    flex: 1;
 }
 
-.promo-card h2 {
-    font-size: 1.5rem;
-    color: #4CAF50;
-    margin: 10px 0;
+.promo-content h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
-.promo-card p {
-    font-size: 1rem;
-    margin: 10px 0;
-    color: #555;
+.promo-content p {
+    font-size: 14px;
+    margin-bottom: 20px;
 }
 
-.btn {
-    display: inline-block;
-    margin: 15px 0;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: #fff;
+.promo-content .btn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    border-radius: 4px;
+    display: inline-block;
 }
 
-.btn:hover {
-    background-color: #3e8e41;
+.promo-content .btn:hover {
+    background-color: #0056b3;
 }
 
-/* Footer */
-.footer {
-    text-align: center;
-    padding: 15px 0;
-    background-color: #333;
-    color: #fff;
-    margin-top: 20px;
-}
