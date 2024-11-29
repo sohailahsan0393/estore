@@ -19,23 +19,46 @@ h1, h2, h3 {
     color: #222;
 }
 
-
-/* Product Page */
-.product {
+/* Exclusive Promotions Page */
+.promo-card {
     display: flex;
-    margin: 20px;
+    margin: 20px auto;
+    max-width: 800px;
     background: #fff;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.product-image img {
+.promo-card img {
     width: 50%;
     object-fit: cover;
 }
 
- .product-details {
-    flex: 1;
+.promo-content {
     padding: 20px;
+    flex: 1;
+}
+
+.promo-content h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.promo-content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.promo-content .btn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.promo-content .btn:hover {
+    background-color: #0056b3;
 }
